@@ -1,14 +1,15 @@
 <div class="jumbotron">
   <p>
-    ID:<input type="number" placeholder="ENTER ID" [(ngModel)]="id">NAME:
-    <input type="text" placeholder="ENTER NAME" [(ngModel)]="name"><br> AGE:
-    <input type="number" placeholder="ENTER AGE" [(ngModel)]="age"><br> COUNTRY:
-    <input type="text" placeholder="ENTER COUNTRY" [(ngModel)]="country"><br><br>
-
-
-    <button class="btn btn-primary" (click)="onAdd()">ADD</button>&nbsp;&nbsp;
-    <button class="btn btn-primary" (click)="onRead()">READ</button>&nbsp;&nbsp;
-    <button class="btn btn-primary" (click)="onUpdate()">UPDATE</button>&nbsp;&nbsp;
-    <button class="btn btn-primary" (click)="onDelete()">DELETE</button>
+    NAME:<input type="text" placeholder="Enter name"  [(ngModel)]="name">
+    EMAIL:<input type="text" placeholder="Enter email"  [(ngModel)]="email"><br><br>
+    MOBILE NUMBER:<input type="number" min="0" placeholder="Enter Mobile number"  [(ngModel)]="mobile">
+    Country:<input type="text"  placeholder="Enter Country" [(ngModel)]="country"><br>
+    
   </p>
+    <hr>
+  <button class="btn btn-primary" (click)="onAdd()">ADD</button>&nbsp;&nbsp;
+  <button class="btn btn-primary" (click)="onRead()"> READ</button>&nbsp;&nbsp;
+  <button class="btn btn-primary" (click)="onUpdate()">UPDATE</button>&nbsp;&nbsp;
+ 
+  <button class="btn btn-primary" (click)="onDelete()">DELETE</button>
 </div>
